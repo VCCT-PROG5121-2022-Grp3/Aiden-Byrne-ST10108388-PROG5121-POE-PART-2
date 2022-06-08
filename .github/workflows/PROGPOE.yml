@@ -30,7 +30,7 @@ jobs:
         run: ls
      # Compiles classes to test 
       - name: compile classes
-        working-directory: ./src/projectpoe
+        working-directory: ./src
         run: javac -cp "../../testresources/junit-platform-console-standalone-1.8.2.jar" ./projectpoe/ProjectPOE.java ./projectpoe/Task.java ./projectpoe/Login.java Search.java "../../test/progpoe/TaskTest.java"  "../../test/progpoe/LoginTest.java" 
 
     # list contents of src to verify that classess compiled 
