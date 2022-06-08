@@ -2,15 +2,17 @@
 package projectpoe;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
 import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+//import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TaskTest
 {
+    String lastName1;
+    String taskDescription1;
     Task task = new Task();
     public TaskTest()
     {
@@ -43,7 +45,8 @@ public class TaskTest
     @Test
     public void AtestTaskDescriptionOutput()
     {
-         task.taskDescriptionCheck = "Create Login to authenticate users";
+        String taskDescription = "Create Login to authenticate users";
+         task.taskDescriptionCheck = taskDescription;
          String expected = "Task successfully captured";
          String actual = task.taskDescriptionOutput();
          assertEquals(expected,actual);
@@ -98,9 +101,14 @@ public class TaskTest
     @Test
     public void AtestCreateTaskID()
     {
-        task.lastNameOfDeveloper = "Harrison";
-        task.taskName = "Login Feature";
-        task.numberOfTasks = 0;
+        String lastName2 = "Harrison";
+        task.lastNameOfDeveloper = lastName2;
+        
+        String taskName = "Login Feature";
+        task.taskName = taskName;
+        
+        int numberTasks = 0;
+        task.numberOfTasks = numberTasks;
        
         String expected = "LO:0:SON";
         String actual = task.createTaskID();
@@ -147,7 +155,8 @@ public class TaskTest
     @Test
     public void BtestTaskDescriptionOutput()
     {
-         task.taskDescriptionCheck = "Create Add Task feature to add users";
+        taskDescription1 = "Create Add Task feature to add users";
+         task.taskDescriptionCheck = taskDescription1;
          String expected = "Task successfully captured";
          String actual = task.taskDescriptionOutput();
          assertEquals(expected,actual);
@@ -172,7 +181,11 @@ public class TaskTest
     @Test
     public void BtestCreateTaskID()
     {
-        task.lastNameOfDeveloper = "Smith";
+        //task.lastNameOfDeveloper = "Smith";
+        lastName1 = "Smith";
+        task.lastNameOfDeveloper =  lastName1;
+        
+        
         task.taskName = "Add Task Feature";
         task.numberOfTasks = 1;
         
