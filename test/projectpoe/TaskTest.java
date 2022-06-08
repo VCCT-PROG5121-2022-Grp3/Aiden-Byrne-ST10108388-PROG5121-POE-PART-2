@@ -3,12 +3,12 @@ package projectpoe;
 
 import org.junit.Test;
 
-import org.junit.FixMethodOrder;
-import org.junit.runners.MethodSorters;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+//import org.junit.FixMethodOrder;
+//import org.junit.runners.MethodSorters;
+import static org.junit.Assert.assertEquals;
 //import static org.junit.jupiter.api.Assertions.assertFalse;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+//@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TaskTest
 {
     String lastName1;
