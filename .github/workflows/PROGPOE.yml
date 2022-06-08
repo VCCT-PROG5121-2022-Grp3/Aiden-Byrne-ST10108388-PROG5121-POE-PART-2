@@ -31,7 +31,7 @@ jobs:
      # Compiles classes to test 
       - name: compile classes
         working-directory: ./src
-        run: javac -cp "../../testresources/junit-platform-console-standalone-1.8.2.jar" ./projectpoe/ProjectPOE.java ./projectpoe/Task.java ./projectpoe/Login.java  "../test/progpoe/TaskTest.java"  "../test/progpoe/LoginTest.java" 
+        run: javac -cp "../../testresources/junit-platform-console-standalone-1.8.2.jar" ./projectpoe/ProjectPOE.java ./projectpoe/Task.java ./projectpoe/Login.java  "../test/projectpoe/TaskTest.java"  "../test/projectpoe/LoginTest.java" 
 
     # list contents of src to verify that classess compiled 
       - name: List contents of src directory after compile
@@ -41,12 +41,12 @@ jobs:
         
        # copy compiled classes to test directory 
       - name : copy compiled classes to testresources directory 
-        working-directory: ./src/progpoe
-        run: cp -t  "../../test/progpoe" Task.class  Login.class
+        working-directory: ./src/projectpoe
+        run: cp -t  "../../test/projectpoe" Task.class  Login.class
         
         #copy compiled tests 
       - name : copy compiled Test classes to testresources directory 
-        working-directory: ./test/progpoe
+        working-directory: ./test/projectpoe
         run: cp -t  "../../testresources/" Task.class  Login.class 
         
         # list contents or directory
