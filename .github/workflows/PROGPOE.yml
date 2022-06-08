@@ -51,10 +51,10 @@ jobs:
         
         # list contents or directory
       - name: List contents test package
-        working-directory: ./test/progpoe
+        working-directory: ./test/projectpoe
         run: ls
         
         #run tests and output report 
       - name: run tests and create report 
         working-directory: ./test
-        run: java  "../testresources/junit-platform-suite-commons-1.8.2.jar:../testresources/junit-platform-suite-api-1.8.2.jar:../testresources/junit-platform-suite-engine-1.8.2:../testresources/juniorg.junit.platform.console.ConsoleLauncher " -cp "./progpoe" --select-class progpoe.TaskTest  --reports-dir ="reports"
+        run: java  "../testresources/junit-platform-suite-commons-1.8.2.jar:../testresources/junit-platform-suite-api-1.8.2.jar:../testresources/junit-platform-suite-engine-1.8.2:../testresources/juniorg.junit.platform.console.ConsoleLauncher " -cp "./projectpoe" --select-class projectpoe.TaskTest  --reports-dir ="reports"
