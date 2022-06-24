@@ -313,6 +313,7 @@ public class Login
                 //Calling of the class Task which allows the user to acess the kanbhan program
                  new Task();
                 
+                 JOptionPane.showMessageDialog(null,"Welcome to EasyKanBan");
                 //exits out of the while loop if LoginUser() is equal to true
                 break;
 
