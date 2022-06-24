@@ -1,6 +1,6 @@
 <h1> To Do program </h1>
 
-<h2> Description of the program </h2>
+<h3> Description of the program </h3>
 
 <p> This program was created to allow managers to track the progress of their software developers progress on the tasks they were assagined and thus allows for 
     a more efficient way of managing a team of software developers and allows for managers to know if they are falling behind on a certian section of a
