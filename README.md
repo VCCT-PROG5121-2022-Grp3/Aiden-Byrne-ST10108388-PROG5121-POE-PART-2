@@ -17,4 +17,6 @@ what you wish to display</p>
 
 <p> if you wish to exit the program you can click the exit button and it will display a prompt asking if you want are sure you want to exit the program</p>
  
+ <h3> Guideline to the source code </h3>
  
+ <p> The source code consists of <em> 3 classes </em> the <em> main </em> class is <em> ProjectPOE </em>
