@@ -14,11 +14,11 @@ public class Task extends JFrame implements ActionListener
 {
 //------------------------start of decleration----------------------------------
 
-   JButton addTask, showReport, exitApp;
+  public JButton addTask, showReport, exitApp;
     
-   JLabel title;
+  public JLabel title;
     
-   public String taskName, amountOfTasks2, taskDescriptionCheck, descriptionCorrect, descriptionIncorrect,
+  public String taskName, amountOfTasks2, taskDescriptionCheck, descriptionCorrect, descriptionIncorrect,
             firstNameOfDeveloper, lastNameOfDeveloper, durationOfTask2, letterOfTaskName,
             letterOfLastName, taskID, printDetails, statusOfTask2,tasksThatAreDone,displayReport,
             displayOptions2,showTaskName,findTaskName;
@@ -47,7 +47,7 @@ public class Task extends JFrame implements ActionListener
     
    private String[] arrayTaskId = new String[10];
     
-  public int taskAmount;
+   public int taskAmount;
     
 
 //-------------------------end of declaration---------------------------------//
